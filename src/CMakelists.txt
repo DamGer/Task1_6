@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(Fibonachi)
+set(SOURCES Fibonachi.cpp)
+set(HEADERS Fibonachi_num.h)
+add_library(Fibonachi ${SOURCES} ${HEADERS})
+target_include_directories(Fibonachi PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
